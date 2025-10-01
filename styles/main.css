@@ -22,3 +22,28 @@
 .nav-link.active {
     color: #0ea5e9 !important;
 }
+
+/* Icon styling */
+.icon-inline {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge styling */
+.badge {
+    padding: 6px 12px;
+    font-weight: 500;
+}

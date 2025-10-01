@@ -31,88 +31,279 @@
         </div>
     </nav>
     <main>
-        <h2>My Hobbies & Interests</h2>
-        
-        <section>
-            <h3>Gaming & Competition</h3>
-            <p>Gaming has been a huge part of my life! I love the strategy and quick thinking required in competitive games, 
-            plus the problem-solving aspects of RPGs. There's something about mastering complex systems that appeals to 
-            the same part of my brain that loves programming.</p>
-            
-            <figure>
-                <img src="assets/setup.png" 
-                     alt="Gaming setup with multiple monitors showing Valorant gameplay" 
-                     width="400" height="300">
-                <figcaption>Definitely not my setup but thought it looks cool</figcaption>
-            </figure>
-            
-            <h4>Current Favorites:</h4>
-            <ul>
-                <li><strong>FPS Games:</strong> Fortnite (my main), Call of Duty, Valorant, Apex Legends</li>
-                <li><strong>RPGs & Fantasy:</strong> Elden Ring, Elder Scrolls series, Sekiro, Expedition 33, or any souls-like game (Would take up a lot of pages if I were to list all the games I played lol)</li>
-                <li><strong>What I Love:</strong> The strategic thinking in competitive games and the world-building in RPGs</li>
-                <li><strong>Fun Fact:</strong> I think Souls-like games actually improved my debugging skills by challenging my patience and persistence!</li>
-            </ul>
+        <!-- Page Header -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-center mb-3">My Hobbies & Interests</h1>
+                <p class="lead text-center text-muted">What I do when I'm not coding</p>
+            </div>
         </section>
-        
-        <section>
-            <h3>Soccer & Athletics</h3>
-            <p><strong>Soccer is my main physical outlet!</strong> I love the teamwork and strategy involved, plus it's a 
-            great way to stay active between all the screen time from coding and gaming.</p>
-            
-            <blockquote>
-                <p>"In football, the most difficult thing is to make the difficult look simple."</p>
-                <cite>— Johan Cruyff</cite>
-            </blockquote>
-            
-            <h4>My Soccer Experience:</h4>
-            <ol>
-                <li>Playing pickup games with friends on campus</li>
-                <li>Following Premier League and international tournaments</li>
-                <li>Trying to get better at free kicks (still working on it!)</li>
-                <li>Watching tactical analysis videos since the strategy side fascinates me</li>
-            </ol>
+
+        <!-- Gaming Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="hobby-header mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle me-3">
+                                    <i data-lucide="gamepad-2"></i>
+                                </div>
+                                <h2 class="mb-0">Gaming & Competition</h2>
+                            </div>
+                        </div>
+                        <p class="lead mb-4">
+                            Gaming has been a huge part of my life! I love the strategy and quick thinking required 
+                            in competitive games, plus the problem-solving aspects of RPGs. There's something about 
+                            mastering complex systems that appeals to the same part of my brain that loves programming.
+                        </p>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i data-lucide="crosshair" class="icon-inline text-danger"></i>
+                                    FPS Games
+                                </h5>
+                                <p class="mb-0">Fortnite (my main), Call of Duty, Valorant, Apex Legends</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i data-lucide="sword" class="icon-inline text-primary"></i>
+                                    RPGs & Fantasy
+                                </h5>
+                                <p class="mb-0">Elden Ring, Elder Scrolls series, Sekiro, Expedition 33, and any souls-like game</p>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <i data-lucide="lightbulb" class="icon-inline"></i>
+                            <strong>Fun Fact:</strong> Souls-like games actually improved my debugging skills by challenging my patience and persistence!
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <img src="assets/setup.png" 
+                            alt="Gaming setup with multiple monitors" 
+                            class="img-fluid rounded shadow-lg">
+                        <p class="text-center text-muted mt-3">
+                            <small>Definitely not my setup but thought it looks cool</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section>
-            <h3>Cybersecurity & CTF Challenges</h3>
-            <p>I got into cybersecurity through some friends at Drake, and now I'm totally hooked! We started a Cyber Club 
-            last year and I love working through <em>Capture The Flag</em> challenges. There's something so satisfying about 
-            finding vulnerabilities and figuring out how systems work under the hood.</p>
-            
-            <figure>
-                <img src="assets/CDC.jpg" 
-                     alt="Screenshot of a Capture The Flag cybersecurity challenge interface" 
-                     width="400" height="300">
-                <figcaption>Working on a web exploitation challenge during a hackathon</figcaption>
-            </figure>
-            
-            <h4>Security Tools I Use:</h4>
-            <ul>
-                <li>Burp Suite for web application testing</li>
-                <li>Wireshark for network analysis</li>
-                <li>Metasploit for penetration testing practice</li>
-                <li>Various Linux tools and Python scripting</li>
-            </ul>
-            
-            <p>Our team actually placed 5th nationally in the ISEAGE CDC Hackathon last year, which was pretty incredible! 
-            We were even invited to participate in the international competition that happened a few month after.</p>
+
+        <!-- Soccer Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                        <div class="hobby-header mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle me-3">
+                                    <i data-lucide="football"></i>
+                                </div>
+                                <h2 class="mb-0">Soccer & Athletics</h2>
+                            </div>
+                        </div>
+                        <p class="lead mb-4">
+                            Soccer is my main physical outlet! I love the teamwork and strategy involved, 
+                            plus it's a great way to stay active between all the screen time from coding and gaming.
+                        </p>
+                        
+                        <blockquote class="blockquote-custom p-4 mb-4">
+                            <p class="mb-2">"In football, the most difficult thing is to make the difficult look simple."</p>
+                            <footer class="blockquote-footer mt-2">Johan Cruyff</footer>
+                        </blockquote>
+                        
+                        <h5 class="mb-3">My Soccer Experience:</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i data-lucide="check-circle" class="icon-inline text-success"></i>
+                                Playing pickup games with friends on campus
+                            </li>
+                            <li class="list-group-item">
+                                <i data-lucide="check-circle" class="icon-inline text-success"></i>
+                                Following Premier League and international tournaments
+                            </li>
+                            <li class="list-group-item">
+                                <i data-lucide="check-circle" class="icon-inline text-success"></i>
+                                Trying to get better at free kicks (still working on it!)
+                            </li>
+                            <li class="list-group-item">
+                                <i data-lucide="check-circle" class="icon-inline text-success"></i>
+                                Watching tactical analysis videos
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="soccer-visual p-5 text-center bg-white rounded shadow">
+                            <i data-lucide="trophy" style="width: 120px; height: 120px;" class="text-warning mb-3"></i>
+                            <h3>Love for the Game</h3>
+                            <p class="text-muted">Strategy meets athleticism</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h3>Music & Productivity</h3>
-            <p>Music is essential for my coding sessions! I've discovered that different types of music work better 
-            for different types of programming tasks.</p>
-            
-            <details>
-                <summary>Click to see my coding playlists</summary>
-                <ul>
-                    <li><strong>Focus Mode:</strong> Lo-fi hip hop and ambient electronic</li>
-                    <li><strong>Problem-Solving:</strong> Instrumental post-rock</li>
-                    <li><strong>Debugging:</strong> Surprisingly, upbeat pop music works best</li>
-                    <li><strong>Late Night Coding:</strong> Synthwave and cyberpunk soundtracks</li>
-                </ul>
-                <p><em>I also listen to a ton of tech podcasts during my commute to stay current with industry trends!</em></p>
-            </details>
+
+        <!-- Cybersecurity Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="hobby-header mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle me-3">
+                                    <i data-lucide="shield"></i>
+                                </div>
+                                <h2 class="mb-0">Cybersecurity & CTF</h2>
+                            </div>
+                        </div>
+                        <p class="lead mb-4">
+                            I got into cybersecurity through some friends at Drake, and now I'm totally hooked! 
+                            We started a Cyber Club last year and I love working through Capture The Flag challenges. 
+                            There's something so satisfying about finding vulnerabilities and figuring out how systems work.
+                        </p>
+                        
+                        <div class="achievement-badge p-4 bg-primary text-white rounded mb-4">
+                            <div class="d-flex align-items-center">
+                                <i data-lucide="award" style="width: 48px; height: 48px;" class="me-3"></i>
+                                <div>
+                                    <h4 class="mb-1">5th Place Nationally</h4>
+                                    <p class="mb-0">ISEAGE CDC Hackathon</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5 class="mb-3">Security Tools I Use:</h5>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="tool-badge p-3 bg-light rounded text-center">
+                                    <i data-lucide="terminal" class="icon-inline"></i>
+                                    Burp Suite
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="tool-badge p-3 bg-light rounded text-center">
+                                    <i data-lucide="network" class="icon-inline"></i>
+                                    Wireshark
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="tool-badge p-3 bg-light rounded text-center">
+                                    <i data-lucide="target" class="icon-inline"></i>
+                                    Metasploit
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="tool-badge p-3 bg-light rounded text-center">
+                                    <i data-lucide="code" class="icon-inline"></i>
+                                    Python Scripts
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <img src="assets/CDC.jpg" 
+                            alt="Capture The Flag cybersecurity challenge" 
+                            class="img-fluid rounded shadow-lg">
+                        <p class="text-center text-muted mt-3">
+                            <small>Working on a web exploitation challenge during a hackathon</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="hobby-header mb-4 text-center">
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <div class="icon-circle me-3">
+                                    <i data-lucide="music"></i>
+                                </div>
+                                <h2 class="mb-0">Music & Productivity</h2>
+                            </div>
+                        </div>
+                        <p class="lead text-center mb-5">
+                            Music is essential for my coding sessions! I've discovered that different types of 
+                            music work better for different types of programming tasks.
+                        </p>
+                        
+                        <div class="accordion" id="musicAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#focusMode">
+                                        <i data-lucide="headphones" class="icon-inline text-primary"></i>
+                                        Focus Mode
+                                    </button>
+                                </h2>
+                                <div id="focusMode" class="accordion-collapse collapse show" data-bs-parent="#musicAccordion">
+                                    <div class="accordion-body">
+                                        Lo-fi hip hop and ambient electronic music help me concentrate during deep work sessions.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#problemSolving">
+                                        <i data-lucide="brain" class="icon-inline text-success"></i>
+                                        Problem-Solving
+                                    </button>
+                                </h2>
+                                <div id="problemSolving" class="accordion-collapse collapse" data-bs-parent="#musicAccordion">
+                                    <div class="accordion-body">
+                                        Instrumental post-rock provides the perfect backdrop for tackling complex algorithms.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#debugging">
+                                        <i data-lucide="bug" class="icon-inline text-danger"></i>
+                                        Debugging
+                                    </button>
+                                </h2>
+                                <div id="debugging" class="accordion-collapse collapse" data-bs-parent="#musicAccordion">
+                                    <div class="accordion-body">
+                                        Surprisingly, upbeat pop music works best when hunting down bugs!
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lateNight">
+                                        <i data-lucide="moon" class="icon-inline text-info"></i>
+                                        Late Night Coding
+                                    </button>
+                                </h2>
+                                <div id="lateNight" class="accordion-collapse collapse" data-bs-parent="#musicAccordion">
+                                    <div class="accordion-body">
+                                        Synthwave and cyberpunk soundtracks fuel those midnight coding marathons.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info mt-4 text-center">
+                            <i data-lucide="podcast" class="icon-inline"></i>
+                            I also listen to a ton of tech podcasts during my commute to stay current with industry trends!
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
